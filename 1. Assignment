@@ -38,3 +38,20 @@ let totalCost = price * quantity;
 let finalPrice = totalCost - (totalCost * discount);
 
 console.log("Final price:", finalPrice);
+
+---
+
+// Question 1.4 - Expressions and Operators
+
+let a = 15;
+let b = 4;
+
+let remainder = a % b;
+let power = a ** b;
+let isGreater = a > b;
+let isEqual = a === b;
+
+console.log("Remainder:", remainder);
+console.log("Power:", power);
+console.log("Is a greater than b:", isGreater);
+console.log("Is a equal to b:", isEqual);
