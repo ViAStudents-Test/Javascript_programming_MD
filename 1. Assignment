@@ -283,3 +283,62 @@ if (student.creditsCompleted < 30) {
 }
 
 //---
+
+// Question 4.5 - Final Student Report
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    program: "Information Technology",
+    averageGrade: 85,
+    creditsCompleted: 120
+};
+
+let eligibility;
+
+if (student.age >= 18 && student.averageGrade >= 50) {
+    eligibility = "Eligible";
+} else {
+    eligibility = "Not Eligible";
+}
+
+let courseFee = 500;
+let discount = 0;
+
+if (student.averageGrade >= 90) {
+    discount = 0.25;
+} else if (student.averageGrade >= 80) {
+    discount = 0.15;
+} else if (student.averageGrade >= 70) {
+    discount = 0.10;
+} else {
+    discount = 0;
+}
+
+let finalCourseFee = courseFee - (courseFee * discount);
+
+let studyLevel;
+
+if (student.creditsCompleted < 30) {
+    studyLevel = "Beginner";
+} else if (student.creditsCompleted < 60) {
+    studyLevel = "Intermediate";
+} else if (student.creditsCompleted < 120) {
+    studyLevel = "Advanced";
+} else {
+    studyLevel = "Graduating";
+}
+
+console.log("----- STUDENT REPORT -----");
+console.log("");
+console.log("Name:", student.firstName, student.lastName);
+console.log("Program:", student.program);
+console.log("Average Grade:", student.averageGrade);
+console.log("Eligibility:", eligibility);
+console.log("Course Fee: €" + finalCourseFee);
+console.log("Study Level:", studyLevel);
+console.log("");
+console.log("--------------------------");
+
+//---
