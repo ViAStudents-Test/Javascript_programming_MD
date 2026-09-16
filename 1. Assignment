@@ -231,3 +231,30 @@ if (student.age >= 18 && student.averageGrade >= 50) {
 
 //---
 
+// Question 4.3 - Course Fee
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    program: "Information Technology",
+    averageGrade: 85,
+    creditsCompleted: 120
+};
+
+let courseFee = 500;
+let discount = 0;
+
+if (student.averageGrade >= 90) {
+    discount = 0.25;
+} else if (student.averageGrade >= 80) {
+    discount = 0.15;
+} else if (student.averageGrade >= 70) {
+    discount = 0.10;
+} else {
+    discount = 0;
+}
+
+let finalCourseFee = courseFee - (courseFee * discount);
+
+console.log("Final course fee:", finalCourseFee);
