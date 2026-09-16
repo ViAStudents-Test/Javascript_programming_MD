@@ -12,4 +12,16 @@ console.log("Age:", age);
 console.log("University:", university);
 console.log("Current year of study:", studyYear);
 
+---
 
+// Question 1.2 - Grades
+
+const grade1 = 8;
+const grade2 = 7;
+const grade3 = 9;
+
+const total = grade1 + grade2 + grade3;
+const average = total / 3;
+
+console.log("Total grade:", total);
+console.log("Average grade:", average);
