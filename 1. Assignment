@@ -146,3 +146,25 @@ console.log("Full name:", student.firstName, student.lastName);
 console.log("Programme:", student.program);
 console.log("Year of study:", student.year);
 console.log("Average grade:", student.averageGrade);
+
+//---
+
+// Question 3.3 - Modify the Object
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    studentId: "IT12345",
+    program: "Information Technology",
+    year: 3,
+    averageGrade: 8
+};
+
+student.averageGrade = 9;
+student.year = 4;
+student.email = "janis.berzins@example.com";
+
+console.log("Average grade:", student.averageGrade);
+console.log("Year of study:", student.year);
+console.log("Email:", student.email);
