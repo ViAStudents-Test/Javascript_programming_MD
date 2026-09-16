@@ -102,3 +102,14 @@ if (username === "student" && password === "js123") {
 }
 
 //---
+
+// Question 2.4 - Equality Operators
+
+// == compares values, but can convert data types
+// === compares both values and data types
+
+let number = 5;
+let text = "5";
+
+console.log(number == text);   // true
+console.log(number === text);  // false
