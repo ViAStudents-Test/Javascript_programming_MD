@@ -12,7 +12,7 @@ console.log("Age:", age);
 console.log("University:", university);
 console.log("Current year of study:", studyYear);
 
----
+//---
 
 // Question 1.2 - Grades
 
@@ -26,7 +26,7 @@ const average = total / 3;
 console.log("Total grade:", total);
 console.log("Average grade:", average);
 
----
+//---
 
 // Question 1.3 - Discount Calculation
 
@@ -39,7 +39,7 @@ let finalPrice = totalCost - (totalCost * discount);
 
 console.log("Final price:", finalPrice);
 
----
+//---
 
 // Question 1.4 - Expressions and Operators
 
@@ -56,7 +56,7 @@ console.log("Power:", power);
 console.log("Is a greater than b:", isGreater);
 console.log("Is a equal to b:", isEqual);
 
----
+//---
 
 // Question 2.1 - Grade Classification
 
@@ -74,7 +74,7 @@ if (averageGrade >= 90) {
     console.log("Fail");
 }
 
----
+//---
 
 // Question 2.2 - Age Conditions
 
@@ -87,3 +87,18 @@ if (age >= 18) {
 if (age >= 16) {
     console.log("Can receive a student discount");
 }
+
+//---
+
+// Question 2.3 - Login Validation
+
+let username = "student";
+let password = "js123";
+
+if (username === "student" && password === "js123") {
+    console.log("Login successful");
+} else {
+    console.log("Invalid credentials");
+}
+
+//---
