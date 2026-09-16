@@ -168,3 +168,35 @@ student.email = "janis.berzins@example.com";
 console.log("Average grade:", student.averageGrade);
 console.log("Year of study:", student.year);
 console.log("Email:", student.email);
+
+//---
+
+// Question 3.4 - Object Method
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    studentId: "IT12345",
+    program: "Information Technology",
+    year: 3,
+    averageGrade: 8
+};
+
+student.averageGrade = 85;
+
+student.getStatus = function() {
+    if (this.averageGrade >= 90) {
+        return "Excellent student";
+    } else if (this.averageGrade >= 70) {
+        return "Good student";
+    } else {
+        return "Needs improvement";
+    }
+};
+
+console.log(student.getStatus());
+
+//---
+
+
