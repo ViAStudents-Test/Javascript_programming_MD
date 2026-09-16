@@ -127,3 +127,22 @@ let student = {
     year: 3,
     averageGrade: 8
 };
+
+//---
+
+// Question 3.2 - Access Object Properties
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    studentId: "IT12345",
+    program: "Information Technology",
+    year: 3,
+    averageGrade: 8
+};
+
+console.log("Full name:", student.firstName, student.lastName);
+console.log("Programme:", student.program);
+console.log("Year of study:", student.year);
+console.log("Average grade:", student.averageGrade);
