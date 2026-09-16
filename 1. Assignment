@@ -1,1 +1,7 @@
+// Question 1.1 - Student Information
 
+const firstName = "Janis";
+const lastName = "Berzins";
+let age = 22;
+const university = "Vidzeme University of Applied Sciences";
+let studyYear = 3;
