@@ -73,3 +73,17 @@ if (averageGrade >= 90) {
 } else {
     console.log("Fail");
 }
+
+---
+
+// Question 2.2 - Age Conditions
+
+let age = 18;
+
+if (age >= 18) {
+    console.log("Can vote");
+}
+
+if (age >= 16) {
+    console.log("Can receive a student discount");
+}
