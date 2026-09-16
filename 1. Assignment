@@ -55,3 +55,21 @@ console.log("Remainder:", remainder);
 console.log("Power:", power);
 console.log("Is a greater than b:", isGreater);
 console.log("Is a equal to b:", isEqual);
+
+---
+
+// Question 2.1 - Grade Classification
+
+let averageGrade = 85;
+
+if (averageGrade >= 90) {
+    console.log("Excellent");
+} else if (averageGrade >= 80) {
+    console.log("Very Good");
+} else if (averageGrade >= 70) {
+    console.log("Good");
+} else if (averageGrade >= 50) {
+    console.log("Pass");
+} else {
+    console.log("Fail");
+}
