@@ -113,3 +113,17 @@ let text = "5";
 
 console.log(number == text);   // true
 console.log(number === text);  // false
+
+//---
+
+// Question 3.1 - Create a Student Object
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    studentId: "IT12345",
+    program: "Information Technology",
+    year: 3,
+    averageGrade: 8
+};
