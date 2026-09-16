@@ -199,4 +199,15 @@ console.log(student.getStatus());
 
 //---
 
+// Question 4.1 - Student Object
 
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    program: "Information Technology",
+    averageGrade: 85,
+    creditsCompleted: 120
+};
+
+//---
