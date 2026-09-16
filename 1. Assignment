@@ -5,3 +5,11 @@ const lastName = "Berzins";
 let age = 22;
 const university = "Vidzeme University of Applied Sciences";
 let studyYear = 3;
+
+console.log("First name:", firstName);
+console.log("Last name:", lastName);
+console.log("Age:", age);
+console.log("University:", university);
+console.log("Current year of study:", studyYear);
+
+
