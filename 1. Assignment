@@ -258,3 +258,28 @@ if (student.averageGrade >= 90) {
 let finalCourseFee = courseFee - (courseFee * discount);
 
 console.log("Final course fee:", finalCourseFee);
+
+//---
+
+// Question 4.4 - Study Level
+
+let student = {
+    firstName: "Janis",
+    lastName: "Berzins",
+    age: 22,
+    program: "Information Technology",
+    averageGrade: 85,
+    creditsCompleted: 120
+};
+
+if (student.creditsCompleted < 30) {
+    console.log("Study Level: Beginner");
+} else if (student.creditsCompleted < 60) {
+    console.log("Study Level: Intermediate");
+} else if (student.creditsCompleted < 120) {
+    console.log("Study Level: Advanced");
+} else {
+    console.log("Study Level: Graduating");
+}
+
+//---
