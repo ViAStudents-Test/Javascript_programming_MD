@@ -6,7 +6,7 @@ const products = [
   { id: 5, name: "USB-C Hub", price: 30, category: "accessories", inStock: true },
 ];
 
-fconst btnAll = document.getElementById('btn-all');
+const btnAll = document.getElementById('btn-all');
 const btnLaptops = document.getElementById('btn-laptops');
 const btnAccessories = document.getElementById('btn-accessories');
 
