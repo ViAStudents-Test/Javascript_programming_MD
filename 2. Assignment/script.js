@@ -6,28 +6,43 @@ const products = [
   { id: 5, name: "USB-C Hub", price: 30, category: "accessories", inStock: true },
 ];
 
+fconst btnAll = document.getElementById('btn-all');
+const btnLaptops = document.getElementById('btn-laptops');
+const btnAccessories = document.getElementById('btn-accessories');
+
+const container = document.getElementById('product-container');
+
 function renderProducts(items) {
-    const container = document.getElementById("product-container");
+  const htmlString = items.map(item => `
+    <div class="product-card ${item.inStock ? '' : 'out-of-stock'}">
+      <h2>${item.name}</h2>
+      <p>${item.inStock ? '$' + item.price : 'Out of Stock'}</p>
+    </div>
+  `).join('');
 
-    container.innerHTML = "";
-
-    items.forEach(function(product) {
-        let card = document.createElement("div");
-        card.className = "product-card";
-
-        if (product.inStock == false) {
-            card.classList.add("out-of-stock");
-            card.innerHTML =
-                "<h2>" + product.name + "</h2>" +
-                "<p>Out of Stock</p>";
-        } else {
-            card.innerHTML =
-                "<h2>" + product.name + "</h2>" +
-                "<p>Price: $" + product.price + "</p>";
-        }
-
-        container.appendChild(card);
-    });
+  container.innerHTML = htmlString;
 }
 
+
 renderProducts(products);
+
+
+btnAll.addEventListener('click', () => {
+  renderProducts(products);
+});
+
+btnLaptops.addEventListener('click', () => {
+  const onlyLaptops = products.filter(
+    p => p.category === 'laptops'
+  );
+
+  renderProducts(onlyLaptops);
+});
+
+btnAccessories.addEventListener('click', () => {
+  const onlyAccessories = products.filter(
+    p => p.category === 'accessories'
+  );
+
+  renderProducts(onlyAccessories);
+});
