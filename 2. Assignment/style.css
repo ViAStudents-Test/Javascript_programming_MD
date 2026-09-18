@@ -1,1 +1,18 @@
 
+#product-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.out-of-stock {
+    background-color: lightgray;
+    color: red;
+}
