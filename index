@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>Home page</h1>
+    </header>
+
+    <div class="input">
+        <input type="text" id="idea-input"
+               placeholder="Write your idea" maxlength="60">
+
+        <span id="counter">0 / 60</span>
+
+        <input type="color" id="color-input" value="#ffff99">
+
+        <button id="btn-add">Add Idea</button>
+    </div>
+
+    <div id="board"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
